@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.row-tw {
+  @apply flex flex-wrap items-center;
+}
+.icons {
+  position: relative;
+}
+.icons::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 46%;
+  height: 3px;
+  right: 0;
+  top: 50%;
+}
+.icons::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 46%;
+  height: 3px;
+  left: 0;
+  top: 50%;
+}
+.start.active {
+  background-color: transparent;
+}
+.active {
+  background-color: #1abc9c;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+.icons-port::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(44, 62, 80);
+  width: 46%;
+  height: 3px;
+  right: 0;
+  top: 50%;
+}
+.icons-port::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(44, 62, 80);
+  width: 46%;
+  height: 3px;
+  left: 0;
+  top: 50%;
+}
