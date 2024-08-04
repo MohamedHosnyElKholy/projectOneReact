@@ -11,7 +11,7 @@ import Erorr from "./components/Erorr/Erorr";
 function App() {
   let x = createBrowserRouter([
     {
-      path: "",
+      path: "/",
       element: <Layout />,
       children: [
         { index: true, element: <Home /> },
